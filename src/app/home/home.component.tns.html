@@ -1,5 +1,14 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <ActionBar [title]="title"></ActionBar>
-<StackLayout  class="p-20">
-    <Label [text]="'Welcome to ' + title + '!'" class="h1 text-center" textWrap="true"></Label>
-</StackLayout>
+<BottomNavigation>
+  <TabStrip>
+    <TabStripItem>
+      <Label text="Villagers" class="navbar-text"></Label>
+      <Image src="font://person" class="mdi"></Image>
+    </TabStripItem>
+  </TabStrip>
+  <TabContentItem>
+    <app-villagers-list></app-villagers-list>
+  </TabContentItem>
+</BottomNavigation>
+

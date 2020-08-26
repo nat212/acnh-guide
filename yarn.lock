@@ -111,7 +111,7 @@
     rxjs "6.5.5"
     source-map "0.7.3"
 
-"@angular-devkit/schematics@10.0.7":
+"@angular-devkit/schematics@10.0.7", "@angular-devkit/schematics@~10.0.0":
   version "10.0.7"
   resolved "https://registry.yarnpkg.com/@angular-devkit/schematics/-/schematics-10.0.7.tgz#460272c3fa4a4838d2da65a0e3f512c557d486f1"
   integrity sha512-eyyYPgpjtr3h7WbnNbkDubJ/p+8TgKU6abWd+NmBfTvyeHrpVFUYZabNRcdXwUDSVzfTQKdmLynIkESj/KROrg==
@@ -1070,6 +1070,17 @@
     glob "^7.1.0"
     mkdirp "^1.0.4"
 
+"@nativescript/schematics@^10.0.2":
+  version "10.0.2"
+  resolved "https://registry.yarnpkg.com/@nativescript/schematics/-/schematics-10.0.2.tgz#1ffd3990bb6800b1aa0249976107f1726b5f44ae"
+  integrity sha512-chlNtnRC8CYqb0EQyTPAzM0cm34arLWhiwNXl9OzbYeWbddE9JBv0dH+m6VnMuk1aTaMtLDZkH14GgXkKZTRYw==
+  dependencies:
+    "@angular-devkit/core" "~10.0.0"
+    "@angular-devkit/schematics" "~10.0.0"
+    "@nativescript/tslint-rules" "~0.0.5"
+    "@phenomnomnominal/tsquery" "^4.1.0"
+    strip-json-comments "~3.1.1"
+
 "@nativescript/theme@~2.2.1":
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/@nativescript/theme/-/theme-2.2.1.tgz#12ca952e937506ced272b91969fb3c5143b65b3d"
@@ -1159,6 +1170,13 @@
   integrity sha512-Uv6h1sT+0DrblvIrolFtbvM1FgWm+/sy4B3pvLp67Zys+thcukzS5ekn7HsZFGpWP4Q3fYJCljbWQE/XivMRLw==
   dependencies:
     mkdirp "^1.0.4"
+
+"@phenomnomnominal/tsquery@^4.1.0":
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/@phenomnomnominal/tsquery/-/tsquery-4.1.0.tgz#9c836d6db829b5127ccc1ffd8e4c2ad08d600071"
+  integrity sha512-+i1eqUJODVanUDuTdOPgnjErFg21DKGLstdRXp4LLGcSbO7c+3pwJPkmdSfbkh9gO6xaHJ/5ftSAMqEFJF5cGA==
+  dependencies:
+    esquery "^1.0.1"
 
 "@phenomnomnominal/tsquery@~3.0.0":
   version "3.0.0"
@@ -2530,6 +2548,11 @@ circular-dependency-plugin@5.2.0:
   version "5.2.0"
   resolved "https://registry.yarnpkg.com/circular-dependency-plugin/-/circular-dependency-plugin-5.2.0.tgz#e09dbc2dd3e2928442403e2d45b41cea06bc0a93"
   integrity sha512-7p4Kn/gffhQaavNfyDFg7LS5S/UT1JAjyGd4UqR2+jzoYF02eDkj0Ec3+48TsIa4zghjLY87nQHIh/ecK9qLdw==
+
+class-transformer@^0.3.1:
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/class-transformer/-/class-transformer-0.3.1.tgz#ee681a5439ff2230fc57f5056412d3befa70d597"
+  integrity sha512-cKFwohpJbuMovS8xVLmn8N2AUbAuc8pVo4zEfsUVo8qgECOogns1WVk/FkOZoxhOPTyTYFckuoH+13FO+MQ8GA==
 
 class-utils@^0.3.5:
   version "0.3.6"
@@ -6308,6 +6331,11 @@ mkdirp@^1.0.3, mkdirp@^1.0.4:
   resolved "https://registry.yarnpkg.com/mkdirp/-/mkdirp-1.0.4.tgz#3eb5ed62622756d79a5f0e2a221dfebad75c2f7e"
   integrity sha512-vVqVZQyf3WLx2Shd0qJ9xuvqgAyKPLAiqITEtqW0oIUjzo3PePDd6fW9iFz30ef7Ysp/oiWqbhszeGWW2T6Gzw==
 
+moment@^2.27.0:
+  version "2.27.0"
+  resolved "https://registry.yarnpkg.com/moment/-/moment-2.27.0.tgz#8bff4e3e26a236220dfe3e36de756b6ebaa0105d"
+  integrity sha512-al0MUK7cpIcglMv3YF13qSgdAIqxHTO7brRtaz3DlSULbqfazqkc5kEjNrLDOM7fsjshoFIihnU8snrP7zUvhQ==
+
 move-concurrently@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/move-concurrently/-/move-concurrently-1.0.1.tgz#be2c005fda32e0b29af1f05d7c4b33214c701f92"
@@ -7932,7 +7960,7 @@ reduce-css-calc@^2.1.7:
     css-unit-converter "^1.1.1"
     postcss-value-parser "^3.3.0"
 
-reflect-metadata@^0.1.2, reflect-metadata@~0.1.12:
+reflect-metadata@^0.1.13, reflect-metadata@^0.1.2:
   version "0.1.13"
   resolved "https://registry.yarnpkg.com/reflect-metadata/-/reflect-metadata-0.1.13.tgz#67ae3ca57c972a2aa1642b10fe363fe32d49dc08"
   integrity sha512-Ts1Y/anZELhSsjMcU605fU9RE4Oi3p5ORujwbIKXfWa+0Zxs510Qrmrce5/Jowq3cHSZSJqBjypxmHarc+vEWg==
@@ -9042,6 +9070,11 @@ strip-indent@^1.0.1:
   integrity sha1-DHlipq3vp7vUrDZkYKY4VSrhoKI=
   dependencies:
     get-stdin "^4.0.1"
+
+strip-json-comments@~3.1.1:
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/strip-json-comments/-/strip-json-comments-3.1.1.tgz#31f1281b3832630434831c310c01cccda8cbe006"
+  integrity sha512-6fPc+R4ihwqP6N/aIv2f1gMH8lOVtWQHoqC4yK6oSDVVocumAsfCqjkXnqiYMhmMwS/mEHLp7Vehlt3ql6lEig==
 
 style-loader@1.2.1:
   version "1.2.1"

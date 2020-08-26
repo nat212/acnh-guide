@@ -1,0 +1,7 @@
+<StackLayout>
+  <Label class="h1" text="Villagers"></Label>
+  <ScrollLayout>
+    <app-villager-card *ngFor="let villager of villagers$ | async" [villager]="villager"></app-villager-card>
+  </ScrollLayout>
+</StackLayout>
+
